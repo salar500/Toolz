@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Category — ToolZen Hub</title>
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div id="header-placeholder"></div>
+
+<main class="container">
+  <a href="index.html" style="color:var(--muted)">← Home</a>
+  <h2 id="catTitle" style="margin-top:8px"></h2>
+  <div id="catDesc" style="color:var(--muted);margin-bottom:12px"></div>
+  <div id="toolsList" style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px"></div>
+</main>
+
+<div id="footer-placeholder"></div>
+<script src="assets/loader.js"></script>
+<script>
+async function loadCatalog(){ const r = await fetch('data/tools.json'); return await r.json(); }
+document.addEventListener('DOMContentLoaded', async () => {
+  const params = new URLSearchParams(location.search); const slug = params.get('slug');
+  const data = await loadCatalog().catch(()=>({categories:[]}));
+  const cat = data.categories.find(c => c.id === slug);
+  if(!cat){ document.getElementById('catTitle').innerText='Category not found'; return; }
+  document.getElementById('catTitle').innerText = cat.title;
+  document.getElementById('catDesc').innerText = cat.desc;
+  const list = document.getElementById('toolsList');
+  cat.tools.forEach(t => {
+    const el = document.createElement('div'); el.className='card';
+    el.innerHTML = `<strong>${t.title}</strong><div style="color:var(--muted)">${t.desc}</div>`;
+    el.addEventListener('click', ()=> location.href = `tool.html?id=${encodeURIComponent(t.id)}`);
+    list.appendChild(el);
+  });
+});
+</script>
+</body>
+</html>

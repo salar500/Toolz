@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- SEO TITLE -->
+<title>ToolZenHub – Free Online Calculators, Generators & Converters</title>
+
+<!-- META DESCRIPTION -->
+<meta name="description" content="ToolZenHub offers free online calculators, generators, and converters for productivity, finance, health, development, and daily tasks. Fast, private, and easy to use.">
+
+<!-- CANONICAL -->
+<link rel="canonical" href="https://toolzenhub.com/">
+
+<!-- ✅ GOOGLE-SUPPORTED FAVICONS -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+
+<!-- Apple Devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Theme Color (Mobile Browser Address Bar) -->
+<meta name="theme-color" content="#0f172a">
+
+<link rel="stylesheet" href="assets/styles.css">
+
+<!-- THIRD-PARTY LIBS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+
+<!-- GOOGLE ANALYTICS -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YEJZMCXJ7V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-YEJZMCXJ7V');
+</script>
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ToolZenHub",
+  "url": "https://toolzenhub.com/",
+  "description": "Free online calculators, generators, and more.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "ToolZenHub"
+  }
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+<main class="container">
+
+  <section class="hero">
+    <h1 style="color:var(--green)">
+      Free Online Tools for Calculations, Conversions & Productivity
+    </h1>
+
+    <p style="color:var(--muted)">
+      ToolZenHub provides fast, simple, and privacy-friendly calculators, generators, and converters
+      to help with everyday tasks, learning, and productivity.
+    </p>
+
+    <p class="small" style="margin-top:6px">
+      ✔ No sign-up required • ✔ Works in your browser • ✔ No data stored
+    </p>
+  </section>
+
+  <h2 style="margin-top:22px">Tool Categories</h2>
+  <p class="small">
+    Browse tools by category including finance, health, utilities, development, and productivity.
+  </p>
+  <section id="categories" class="grid cols-3" style="margin-top:12px"></section>
+
+  <h2 style="margin-top:22px">Popular Tools</h2>
+  <p class="small">
+    These are some of the most frequently used tools on ToolZenHub.
+  </p>
+  <section id="featured" class="tools-grid" style="margin-top:12px"></section>
+
+  <section style="margin-top:28px">
+    <p class="small">
+      ⚠️ ToolZenHub tools provide estimates and informational results only.
+      They are not a substitute for professional medical, financial, or legal advice.
+    </p>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/loader.js"></script>
+
+<script>
+async function loadCatalog() {
+  const res = await fetch('data/tools.json'); 
+  return await res.json();
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const data = await loadCatalog().catch(()=>({categories:[],featured:[]}));
+
+  const catEl = document.getElementById('categories');
+  data.categories.forEach(c => {
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = `<strong>${c.title}</strong><div style="color:var(--muted)">${c.desc}</div>`;
+    el.addEventListener('click', ()=> 
+      location.href = `category.html?slug=${encodeURIComponent(c.id)}`
+    );
+    catEl.appendChild(el);
+  });
+
+  const feat = document.getElementById('featured');
+  data.featured.forEach(fid => {
+    let tool = null;
+    data.categories.forEach(cat => 
+      cat.tools.forEach(t => { if(t.id===fid) tool = t; })
+    );
+    if(tool) {
+      const el = document.createElement('div');
+      el.className='card';
+      el.innerHTML = `<strong>${tool.title}</strong><div style="color:var(--muted)">${tool.desc}</div>`;
+      el.addEventListener('click', ()=> 
+        location.href = `tool.html?id=${encodeURIComponent(tool.id)}`
+      );
+      feat.appendChild(el);
+    }
+  });
+});
+</script>
+
+</body>
+</html>

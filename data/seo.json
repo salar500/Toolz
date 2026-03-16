@@ -1,0 +1,302 @@
+{
+  "png-to-jpg": {
+    "intro": "This PNG to JPG converter helps you convert PNG images into JPG format to reduce file size and improve compatibility across devices.",
+    "formula": "Image format conversion (PNG → JPG)",
+    "note": "Transparent areas in PNG images will be replaced with a white background."
+  },
+
+  "jpg-to-png": {
+    "intro": "This JPG to PNG converter allows you to convert JPG images into PNG format, which supports transparency and lossless quality.",
+    "formula": "Image format conversion (JPG → PNG)",
+    "note": "Image quality remains the same; only the file format changes."
+  },
+
+  "heic-to-jpg": {
+    "intro": "This HEIC to JPG converter converts Apple HEIC images into universally supported JPG format for easy sharing and viewing.",
+    "formula": "Image format conversion (HEIC → JPG)",
+    "note": "Image quality is preserved during conversion."
+  },
+
+  "webp-to-jpg": {
+    "intro": "This WEBP to JPG converter helps convert WEBP images into JPG format for better compatibility with older browsers and apps.",
+    "formula": "Image format conversion (WEBP → JPG)",
+    "note": "Minimal compression is applied to maintain image quality."
+  },
+
+  "video-to-mp3": {
+    "intro": "This Video to MP3 converter extracts high-quality audio from video files and saves it as an MP3 file.",
+    "formula": "Audio extraction (Video → MP3)",
+    "note": "Only audio is extracted; video content is not retained."
+  },
+
+  "mp4-to-mp3": {
+    "intro": "This MP4 to MP3 converter allows you to convert MP4 video files into MP3 audio files for music or podcasts.",
+    "formula": "Audio extraction (MP4 → MP3)",
+    "note": "Original audio quality is preserved."
+  },
+
+  "csv-to-json": {
+    "intro": "This CSV to JSON converter transforms CSV data into structured JSON format, making it easier to use in APIs and applications.",
+    "formula": "Data transformation (CSV → JSON)",
+    "note": "Large or complex CSV files may require cleanup before conversion."
+  },
+
+  "json-to-csv": {
+    "intro": "This JSON to CSV converter converts JSON data into a CSV file for spreadsheets and data analysis.",
+    "formula": "Data transformation (JSON → CSV)",
+    "note": "Nested JSON structures are flattened into rows and columns."
+  },
+
+  "kb-to-mb": {
+    "intro": "This KB to MB converter converts kilobytes into megabytes using standard data size calculations.",
+    "formula": "MB = KB ÷ 1024",
+    "note": "Supports decimal values for precise results."
+  },
+
+  "mb-to-gb": {
+    "intro": "This MB to GB converter helps you convert megabytes into gigabytes quickly and accurately.",
+    "formula": "GB = MB ÷ 1024",
+    "note": "Uses standard binary conversion."
+  },
+
+  "cm-to-inch": {
+    "intro": "This CM to Inch converter converts centimeters into inches instantly using accurate conversion formulas.",
+    "formula": "Inches = CM ÷ 2.54",
+    "note": "Commonly used in design, construction, and education."
+  },
+
+  "inch-to-cm": {
+    "intro": "This Inch to CM converter converts inches into centimeters with instant and accurate results.",
+    "formula": "CM = Inches × 2.54",
+    "note": "Supports decimal inputs."
+  },
+
+  "fahrenheit-to-celsius": {
+    "intro": "This Fahrenheit to Celsius converter converts temperatures from Fahrenheit to Celsius accurately.",
+    "formula": "°C = (°F − 32) × 5/9",
+    "note": "Useful for travel, education, and science."
+  },
+
+  "celsius-to-fahrenheit": {
+    "intro": "This Celsius to Fahrenheit converter converts temperatures from Celsius to Fahrenheit instantly.",
+    "formula": "°F = (°C × 9/5) + 32",
+    "note": "Based on the standard temperature conversion formula."
+  },
+
+  "currency-converter": {
+    "intro": "This Currency Converter helps convert one currency into another using available exchange rates.",
+    "formula": "Converted Amount = Amount × Exchange Rate",
+    "note": "Live rates require an active internet connection."
+  },
+  "stopwatch": {
+    "intro": "This online stopwatch helps you measure elapsed time accurately with start, pause, resume, and reset options. Ideal for sports, workouts, studying, and productivity tracking.",
+    "formula": "Elapsed Time = End Time − Start Time",
+    "note": "The stopwatch runs in real time directly in your browser without installation."
+  },
+
+  "countdown": {
+    "intro": "This countdown timer lets you set a specific time and counts down to zero. Perfect for workouts, cooking, exams, presentations, and focus sessions.",
+    "formula": "Remaining Time = Set Duration − Elapsed Time",
+    "note": "Keep the browser tab active for uninterrupted countdown alerts."
+  },
+
+  "pomodoro-timer": {
+    "intro": "This Pomodoro Timer helps improve focus using timed work and break sessions, typically 25 minutes of work followed by short breaks.",
+    "formula": "Productivity Cycle = Focus Time + Break Time",
+    "note": "You can customize work and break durations based on your routine."
+  },
+
+  "interval-timer": {
+    "intro": "This interval timer alternates between work and rest intervals, making it ideal for HIIT workouts, training routines, and structured time sessions.",
+    "formula": "Total Time = (Work Interval + Rest Interval) × Number of Rounds",
+    "note": "Sound alerts notify you when intervals change."
+  },
+
+  "alarm-clock": {
+    "intro": "This online alarm clock allows you to set alarms directly in your browser without downloading any app. Useful for reminders and time alerts.",
+    "formula": "Alarm Trigger Time = Current Time + Set Delay",
+    "note": "The alarm will ring as long as the browser tab remains open."
+  },
+
+  "time-zone-converter": {
+    "intro": "This time zone converter helps you convert time between different global time zones, making scheduling meetings across regions easy.",
+    "formula": "Converted Time = Original Time ± Time Zone Offset",
+    "note": "Daylight saving time is automatically considered."
+  },
+
+  "world-clock": {
+    "intro": "The world clock shows current time in multiple cities worldwide in real time, helping travelers and remote teams stay synchronized.",
+    "formula": "Local Time = UTC Time + City Offset",
+    "note": "Times update automatically without page refresh."
+  },
+
+  "unix-timestamp-converter": {
+    "intro": "This Unix timestamp converter converts Unix time into human-readable dates and vice versa. Commonly used by developers and system engineers.",
+    "formula": "Unix Timestamp = Seconds since January 1, 1970 (UTC)",
+    "note": "Time zone offsets are handled correctly during conversion."
+  },
+  "age-in-hours": {
+    "intro": "The Age in Hours Calculator helps you find how many total hours you have lived based on your date of birth.",
+    "note": "Results are calculated accurately using standard date and time differences."
+  },
+
+  "work-hours-calculator": {
+    "intro": "The Work Hours Calculator helps calculate total working hours for daily, weekly, or custom time periods.",
+    "note": "Useful for payroll estimation, freelancers, and time tracking."
+  },
+
+  "meeting-time-finder": {
+    "intro": "The Meeting Time Finder helps identify the best meeting time across multiple time zones.",
+    "note": "Ideal for remote teams and international collaboration."
+  },
+
+  "sunrise-sunset": {
+    "intro": "The Sunrise and Sunset tool shows accurate sunrise and sunset times for any location worldwide.",
+    "note": "Times are based on standard astronomical calculations."
+  },
+
+  "season-calculator": {
+    "intro": "The Season Calculator determines the current season based on date and hemisphere.",
+    "note": "Useful for education, agriculture, and seasonal planning."
+  },
+
+  "timer-split-laps": {
+    "intro": "The Lap Timer allows you to record and track lap times during a single timing session.",
+    "note": "Commonly used for sports, workouts, and practice sessions."
+  },
+
+  "reverse-timer": {
+    "intro": "The Reverse Timer counts time backward visually from a selected duration.",
+    "note": "Perfect for presentations, workouts, and timed activities."
+  },
+
+  "time-adder": {
+    "intro": "The Time Adder tool adds multiple time durations together accurately.",
+    "note": "Helpful for billing, work tracking, and scheduling."
+  },
+
+  "time-subtractor": {
+    "intro": "The Time Subtractor calculates the difference between two time values.",
+    "note": "Handles hours, minutes, and seconds precisely."
+  },
+
+  "alarm-sound-tester": {
+    "intro": "The Alarm Sound Tester lets you preview alarm sounds before setting them.",
+    "note": "Ensures correct volume and sound selection."
+  },
+
+  "image-resize": {
+    "intro": "The Image Resizer allows you to resize images while maintaining quality and aspect ratio.",
+    "note": "Works directly in your browser without uploading files permanently."
+  },
+
+  "image-compress": {
+    "intro": "The Image Compressor reduces image file size while keeping visual quality intact.",
+    "note": "Helps improve website speed and save storage space."
+  },
+
+  "image-crop": {
+    "intro": "The Image Cropper helps remove unwanted areas from images easily.",
+    "note": "Supports common aspect ratios without quality loss."
+  },
+
+  "image-rotate": {
+    "intro": "The Image Rotator rotates images to the desired orientation instantly.",
+    "note": "No quality loss during rotation."
+  },
+
+  "image-flip": {
+    "intro": "The Image Flipper flips images horizontally or vertically in one click.",
+    "note": "Useful for correcting mirrored photos."
+  },
+
+  "image-convert": {
+    "intro": "The Image Converter converts images between popular formats like JPG, PNG, and WEBP.",
+    "note": "Ensures secure, fast, browser-based conversion."
+  },
+
+  "qr-code": {
+    "intro": "The QR Code Generator creates scannable QR codes for links, text, and contact details.",
+    "note": "Generated QR codes never expire."
+  },
+
+  "color-picker": {
+    "intro": "The Color Picker helps identify and copy HEX, RGB, and HSL color codes.",
+    "note": "Ideal for designers and developers."
+  },
+
+  "text-to-speech": {
+    "intro": "The Text to Speech tool converts written text into natural-sounding audio.",
+    "note": "Helpful for learning, accessibility, and content creation."
+  },
+
+  "speech-to-text": {
+    "intro": "The Speech to Text tool converts spoken words into written text in real time.",
+    "note": "Accuracy depends on microphone quality and clarity."
+  },
+
+  "random-number": {
+    "intro": "The Random Number Generator creates random numbers within a selected range.",
+    "note": "Useful for games, education, and simulations."
+  },
+
+  "random-string": {
+    "intro": "The Random String Generator creates random combinations of letters and numbers.",
+    "note": "Useful for passwords, tokens, and testing."
+  },
+
+  "ip-finder": {
+    "intro": "The IP Finder displays your public IP address and basic network information.",
+    "note": "Only publicly available data is shown."
+  },
+
+  "url-encoder": {
+    "intro": "The URL Encoder converts URLs into a safe, web-compatible format.",
+    "note": "Useful for APIs and web development."
+  },
+
+  "url-decoder": {
+    "intro": "The URL Decoder converts encoded URLs back into readable format.",
+    "note": "Instant decoding with no data storage."
+  }, 
+  "text-counter": {
+    "intro": "This text counter tool helps you instantly count characters, words, and text length for writing, SEO, and academic purposes.",
+    "note": "Useful for writers, students, and marketers to analyze content length accurately."
+  },
+
+  "json-beautifier": {
+    "intro": "This JSON beautifier formats raw or minified JSON into a clean, readable structure for easy debugging and development.",
+    "note": "Ideal for developers working with APIs and JSON-based data."
+  },
+
+  "base64-encoder": {
+    "intro": "This Base64 encoder converts text or data into Base64 format for safe transmission and storage.",
+    "note": "Base64 encoding is not encryption and should not be used for securing sensitive data."
+  },
+
+  "base64-decoder": {
+    "intro": "This Base64 decoder converts Base64 encoded data back into its original readable format.",
+    "note": "Useful for developers decoding API responses and encoded strings."
+  },
+
+  "color-code-converter": {
+    "intro": "This color code converter allows you to convert colors between HEX, RGB, and HSL formats instantly.",
+    "note": "Helpful for designers and developers to maintain consistent color schemes."
+  },
+
+  "notes-app": {
+    "intro": "This online notes app lets you quickly write, edit, and manage notes directly in your browser.",
+    "note": "Notes are stored locally in your browser and are not synced across devices."
+  },
+
+  "clipboard-viewer": {
+    "intro": "This clipboard viewer displays the current content copied to your clipboard in real time.",
+    "note": "Clipboard access requires user permission and no data is stored."
+  },
+
+  "timezone-info": {
+    "intro": "This time zone info tool shows the current time across different regions and time zones worldwide.",
+    "note": "Useful for remote teams, travelers, and international scheduling."
+  }
+
+}

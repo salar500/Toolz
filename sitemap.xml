@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://toolzenhub.in/</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/category.html?slug=calculators</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/category.html?slug=converters</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/category.html?slug=generators</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/category.html?slug=time-tools</loc>
+</url>
+
+<!-- Popular tools -->
+
+<url>
+<loc>https://toolzenhub.in/tool.html?id=bmi-calculator</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/tool.html?id=age-calculator</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/tool.html?id=emi-calculator</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/tool.html?id=password-generator</loc>
+</url>
+
+<url>
+<loc>https://toolzenhub.in/tool.html?id=qr-code-generator</loc>
+</url>
+
+</urlset>

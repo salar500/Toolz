@@ -1,0 +1,998 @@
+{
+  "bmi-calculator": [
+    {
+      "q": "What is BMI?",
+      "a": "BMI (Body Mass Index) is a measurement that compares your body weight to your height. It is commonly used to categorize weight status and identify potential health risks."
+    },
+    {
+      "q": "What is a healthy BMI range?",
+      "a": "A BMI between 18.5 and 24.9 is generally considered healthy for most adults. Values outside this range may indicate underweight or overweight conditions."
+    },
+    {
+      "q": "Can BMI be inaccurate?",
+      "a": "Yes. BMI may not be accurate for athletes, pregnant individuals, or older adults because it does not account for muscle mass or body composition."
+    },
+    {
+      "q": "Does BMI measure body fat?",
+      "a": "No. BMI does not directly measure body fat percentage; it only provides an estimate based on height and weight."
+    },
+    {
+      "q": "How often should BMI be checked?",
+      "a": "For most people, checking BMI every few months is sufficient. It should be used as a general guideline, not a medical diagnosis."
+    }
+  ],
+
+  "emi-calculator": [
+    {
+      "q": "What is EMI?",
+      "a": "EMI stands for Equated Monthly Installment. It is the fixed amount paid every month to repay a loan over a specified tenure."
+    },
+    {
+      "q": "What does EMI include?",
+      "a": "An EMI includes both the principal repayment and the interest charged by the lender. The proportion of each changes over time."
+    },
+    {
+      "q": "Does EMI change over time?",
+      "a": "For fixed-rate loans, EMI usually remains the same throughout the loan tenure. For floating-rate loans, EMI may change based on interest rate fluctuations."
+    },
+    {
+      "q": "Can EMI be reduced?",
+      "a": "Yes. EMI can be reduced by increasing the loan tenure or making partial prepayments toward the principal amount."
+    },
+    {
+      "q": "Is EMI calculated monthly?",
+      "a": "Yes. EMI is calculated on a monthly basis using standard loan repayment formulas."
+    }
+  ],
+
+  "loan-calculator": [
+    {
+      "q": "What does a loan calculator do?",
+      "a": "A loan calculator estimates monthly repayments, total interest payable, and overall loan cost based on user inputs."
+    },
+    {
+      "q": "What inputs are required?",
+      "a": "You need to enter the loan amount, interest rate, and repayment tenure to calculate loan details."
+    },
+    {
+      "q": "Does it show total interest?",
+      "a": "Yes. The calculator displays the total interest payable over the entire loan period."
+    },
+    {
+      "q": "Can tenure affect EMI?",
+      "a": "Yes. A longer tenure reduces the monthly EMI but increases the total interest paid over time."
+    },
+    {
+      "q": "Is this calculator accurate?",
+      "a": "The calculator provides reliable estimates based on standard loan formulas. Actual loan terms may vary by lender."
+    }
+  ],
+
+  "age-calculator": [
+    {
+      "q": "What does the age calculator do?",
+      "a": "The age calculator determines your age based on your date of birth. It helps calculate exact age quickly and accurately."
+    },
+    {
+      "q": "Does it show exact age?",
+      "a": "Yes. It shows age in years, months, and days for precise results."
+    },
+    {
+      "q": "Can future dates be used?",
+      "a": "No. Future dates are not valid and will not produce a correct age calculation."
+    },
+    {
+      "q": "Is leap year considered?",
+      "a": "Yes. Leap years are handled correctly to ensure accurate age calculation."
+    },
+    {
+      "q": "Is it free to use?",
+      "a": "Yes. The age calculator is completely free and works instantly in your browser."
+    }
+  ],
+
+  "percentage-calculator": [
+    {
+      "q": "What is a percentage calculator?",
+      "a": "A percentage calculator helps you quickly calculate percentage values for numbers. It is commonly used in academics, finance, and daily calculations."
+    },
+    {
+      "q": "Can it find percentage increase?",
+      "a": "Yes. It can calculate both percentage increase and percentage decrease accurately."
+    },
+    {
+      "q": "Is it useful for exams?",
+      "a": "Yes. Students frequently use percentage calculators for exams and practice problems."
+    },
+    {
+      "q": "Does it support decimals?",
+      "a": "Yes. Decimal values are fully supported for precise calculations."
+    },
+    {
+      "q": "Is the result instant?",
+      "a": "Yes. Results are calculated instantly as soon as values are entered."
+    }
+  ],
+
+  "gst-calculator": [
+    {
+      "q": "What is GST?",
+      "a": "GST stands for Goods and Services Tax. It is an indirect tax applied to the sale of goods and services."
+    },
+    {
+      "q": "Can it add GST?",
+      "a": "Yes. The calculator can add GST to a base amount to show the final price."
+    },
+    {
+      "q": "Can it remove GST?",
+      "a": "Yes. It can calculate the original base price by removing GST from the total amount."
+    },
+    {
+      "q": "Is it useful for businesses?",
+      "a": "Yes. Businesses commonly use it for invoicing, pricing, and tax estimation."
+    },
+    {
+      "q": "Does it support multiple rates?",
+      "a": "Yes. Common GST rates are supported, but results are estimates and not official tax calculations."
+    }
+  ],
+
+  "discount-calculator": [
+    {
+      "q": "What does a discount calculator do?",
+      "a": "A discount calculator helps determine the final price after applying a discount to an original amount."
+    },
+    {
+      "q": "Can it show savings?",
+      "a": "Yes. It shows how much money you save after applying the discount."
+    },
+    {
+      "q": "Is it useful for shopping?",
+      "a": "Yes. It is especially helpful during sales, offers, and promotional deals."
+    },
+    {
+      "q": "Does it support percentage discounts?",
+      "a": "Yes. Percentage-based discounts are fully supported."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "Yes. The calculations are mathematically precise and instant."
+    }
+  ],
+
+  "sip-calculator": [
+    {
+      "q": "What is SIP?",
+      "a": "SIP stands for Systematic Investment Plan. It is a method of investing a fixed amount regularly in mutual funds."
+    },
+    {
+      "q": "What does the SIP calculator show?",
+      "a": "The SIP calculator estimates the future value of your investments based on contribution amount, tenure, and expected returns."
+    },
+    {
+      "q": "Does it include compounding?",
+      "a": "Yes. The calculation includes compounding growth over the investment period."
+    },
+    {
+      "q": "Can tenure be changed?",
+      "a": "Yes. You can adjust the investment duration to see different results."
+    },
+    {
+      "q": "Is SIP safe?",
+      "a": "SIP investments depend on market performance and involve risk. The calculator provides estimates for planning purposes only."
+    }
+  ],
+
+  "swp-calculator": [
+  {
+    "q": "What is SWP?",
+    "a": "SWP stands for Systematic Withdrawal Plan. It allows investors to withdraw a fixed amount regularly from their investment portfolio while keeping the remaining corpus invested."
+  },
+  {
+    "q": "What does the SWP calculator show?",
+    "a": "The SWP calculator estimates the remaining portfolio value, total withdrawals, and returns based on your initial investment, monthly withdrawal, expected returns, and duration."
+  },
+  {
+    "q": "Does it include compounding?",
+    "a": "Yes. The remaining investment continues to grow based on the expected return rate, so compounding is included in the calculations."
+  },
+  {
+    "q": "Can withdrawal amount or duration be changed?",
+    "a": "Yes. You can adjust the monthly withdrawal or withdrawal duration to see different scenarios for your portfolio."
+  },
+  {
+    "q": "Is SWP safe?",
+    "a": "SWP depends on market performance and expected returns. While it provides a structured way to withdraw funds, portfolio value may fluctuate and calculations are estimates for planning purposes only."
+  }
+  ],
+
+
+
+  "compound-interest-calculator": [
+    {
+      "q": "What is compound interest?",
+      "a": "Compound interest is interest calculated on both the original principal and the accumulated interest over time. This allows investments or savings to grow faster compared to simple interest."
+    },
+    {
+      "q": "How is it different from simple interest?",
+      "a": "Simple interest is calculated only on the principal amount, while compound interest is calculated on the principal plus previously earned interest. This makes compound interest grow faster over longer periods."
+    },
+    {
+      "q": "Does it support yearly compounding?",
+      "a": "Yes. The calculator supports multiple compounding options, including yearly, quarterly, and monthly compounding."
+    },
+    {
+      "q": "Is it useful for investments?",
+      "a": "Yes. It is especially useful for long-term investment planning such as savings, mutual funds, and retirement planning."
+    },
+    {
+      "q": "Is calculation instant?",
+      "a": "Yes. Results are calculated instantly based on the values you enter."
+    }
+  ],
+
+  "fd-calculator": [
+    {
+      "q": "What is FD?",
+      "a": "FD stands for Fixed Deposit, which is a low-risk investment offered by banks and financial institutions. It provides fixed returns over a chosen tenure."
+    },
+    {
+      "q": "Does it show maturity amount?",
+      "a": "Yes. The calculator shows the total maturity value, including principal and interest earned."
+    },
+    {
+      "q": "Is interest compounded?",
+      "a": "Yes. Interest is compounded based on the compounding option selected, such as quarterly or yearly."
+    },
+    {
+      "q": "Is tenure flexible?",
+      "a": "Yes. You can choose different deposit tenures to compare maturity values."
+    },
+    {
+      "q": "Is this FD calculator official?",
+      "a": "No. The results are estimates and actual returns may vary depending on bank policies and interest rates."
+    }
+  ],
+
+
+  "kg-to-lb": [
+  {
+    "q": "What is Kg ↔ Lbs conversion?",
+    "a": "Kg ↔ Lbs conversion allows you to switch between metric (kilograms) and imperial (pounds) units for measuring weight."
+  },
+  {
+    "q": "Why do I need this converter?",
+    "a": "It helps in fitness tracking, shipping calculations, international travel, or any scenario where you need to convert weights quickly and accurately."
+  },
+  {
+    "q": "Is the conversion accurate?",
+    "a": "Yes. The calculator uses precise formulas: 1 kg = 2.20462 lbs and 1 lb = 0.453592 kg."
+  },
+  {
+    "q": "Can I switch between Kg to Lbs and Lbs to Kg?",
+    "a": "Absolutely. Use the toggle buttons at the top of the converter to select the desired conversion mode."
+  },
+  {
+    "q": "Can I enter decimal values?",
+    "a": "Yes. You can enter fractional weights, such as 70.5 kg or 155.2 lbs, and the converter will calculate the exact equivalent."
+  }
+  ],
+
+
+  "rd-calculator": [
+    {
+      "q": "What is RD?",
+      "a": "RD stands for Recurring Deposit, a savings scheme where a fixed amount is deposited every month for a chosen period."
+    },
+    {
+      "q": "Does it show total returns?",
+      "a": "Yes. The calculator displays the total investment amount and estimated returns at maturity."
+    },
+    {
+      "q": "Is monthly deposit required?",
+      "a": "Yes. A fixed monthly deposit is required throughout the RD tenure."
+    },
+    {
+      "q": "Is RD good for savings?",
+      "a": "Yes. RD is ideal for disciplined saving and long-term financial planning."
+    },
+    {
+      "q": "Is interest compounded?",
+      "a": "Yes. Interest is compounded based on bank-defined compounding frequency."
+    }
+  ],
+
+  "mortgage-calculator": [
+    {
+      "q": "What is a mortgage?",
+      "a": "A mortgage is a loan used to purchase or refinance a residential or commercial property."
+    },
+    {
+      "q": "Does it show monthly payments?",
+      "a": "Yes. The calculator estimates monthly mortgage payments based on loan details."
+    },
+    {
+      "q": "Can tenure be adjusted?",
+      "a": "Yes. You can adjust the loan tenure to see how it affects monthly payments and total interest."
+    },
+    {
+      "q": "Is interest included?",
+      "a": "Yes. Interest is included in the monthly payment calculation."
+    },
+    {
+      "q": "Is this mortgage calculator accurate?",
+      "a": "The calculator provides reliable estimates using standard formulas. Actual loan terms may vary by lender."
+    }
+  ],
+
+  "tax-calculator": [
+    {
+      "q": "What does a tax calculator do?",
+      "a": "A tax calculator estimates your income tax liability based on income and deductions entered."
+    },
+    {
+      "q": "Does it support tax slabs?",
+      "a": "Yes. The calculator supports common tax slabs for estimation purposes."
+    },
+    {
+      "q": "Is it country specific?",
+      "a": "Tax rules depend on configuration and selected country, as tax laws vary by region."
+    },
+    {
+      "q": "Is it official?",
+      "a": "No. This tool provides an estimate only and should not be considered official tax advice."
+    },
+    {
+      "q": "Is it useful for planning?",
+      "a": "Yes. It is useful for basic tax planning and understanding potential tax liability."
+    }
+  ],
+
+  "calorie-calculator": [
+    {
+      "q": "What does a calorie calculator do?",
+      "a": "A calorie calculator estimates daily calorie requirements based on personal details and activity level."
+    },
+    {
+      "q": "Does age matter?",
+      "a": "Yes. Age affects metabolism and is an important factor in calorie estimation."
+    },
+    {
+      "q": "Is activity level included?",
+      "a": "Yes. Activity level is included to provide a more accurate calorie estimate."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "It provides an estimate based on standard formulas and should not replace professional medical advice."
+    },
+    {
+      "q": "Is it useful for dieting?",
+      "a": "Yes. It helps plan calorie intake for weight management and fitness goals."
+    }
+  ],
+
+  "bmr-calculator": [
+    {
+      "q": "What is BMR?",
+      "a": "BMR stands for Basal Metabolic Rate, which represents the number of calories your body burns at rest."
+    },
+    {
+      "q": "What does it measure?",
+      "a": "It measures the minimum calories required to maintain basic bodily functions such as breathing and circulation."
+    },
+    {
+      "q": "Is gender considered?",
+      "a": "Yes. Gender affects BMR calculation due to differences in body composition."
+    },
+    {
+      "q": "Is it useful for fitness?",
+      "a": "Yes. BMR helps plan calorie intake and fitness goals."
+    },
+    {
+      "q": "Is it exact?",
+      "a": "No. BMR is an estimate based on widely used formulas."
+    }
+  ],
+
+  "roi-calculator": [
+    {
+      "q": "What is ROI?",
+      "a": "ROI stands for Return on Investment. It measures the profitability of an investment as a percentage."
+    },
+    {
+      "q": "What does it calculate?",
+      "a": "It calculates the profit or loss percentage based on investment cost and returns."
+    },
+    {
+      "q": "Is it useful for business?",
+      "a": "Yes. Businesses use ROI to evaluate investment performance and decision-making."
+    },
+    {
+      "q": "Does it show net profit?",
+      "a": "Yes. The calculator shows net profit along with ROI percentage."
+    },
+    {
+      "q": "Is it instant?",
+      "a": "Yes. Results are calculated instantly."
+    }
+  ],
+
+  "profit-loss-calculator": [
+    {
+      "q": "What does this calculator do?",
+      "a": "This calculator determines whether a transaction results in a profit or a loss."
+    },
+    {
+      "q": "Is percentage shown?",
+      "a": "Yes. It shows both profit or loss amount and percentage."
+    },
+    {
+      "q": "Is it useful for traders?",
+      "a": "Yes. Traders and sellers commonly use it to analyze transactions."
+    },
+    {
+      "q": "Does it support decimals?",
+      "a": "Yes. Decimal values are supported for accurate calculations."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes. The tool is completely free to use."
+    }
+  ],
+
+  "body-fat-calculator": [
+    {
+      "q": "What does a body fat calculator do?",
+      "a": "A body fat calculator estimates body fat percentage based on physical measurements."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "It provides an estimate and should not be considered a medical diagnosis."
+    },
+    {
+      "q": "Does gender matter?",
+      "a": "Yes. Gender plays an important role in body fat calculation."
+    },
+    {
+      "q": "Is it useful for fitness?",
+      "a": "Yes. It helps track body composition and fitness progress."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes. The calculator is completely free to use."
+    }
+  ],
+
+  "csv-to-json": [
+    {
+      "q": "What does CSV to JSON do?",
+      "a": "This tool converts CSV (Comma-Separated Values) data into structured JSON format. It helps make tabular data easier to use in applications, APIs, and programming projects."
+    },
+    {
+      "q": "Is this useful for developers?",
+      "a": "Yes. Developers commonly use CSV to JSON conversion when working with APIs, databases, and data processing workflows."
+    },
+    {
+      "q": "Does it support large files?",
+      "a": "Moderate file sizes are supported for smooth browser-based processing. Extremely large files may depend on device performance."
+    },
+    {
+      "q": "Is data stored?",
+      "a": "No. All files are processed temporarily in your browser and are not uploaded or stored on any server."
+    },
+    {
+      "q": "Is this tool free?",
+      "a": "Yes. The CSV to JSON converter is completely free to use with no limits."
+    }
+  ],
+
+  "json-to-csv": [
+    {
+      "q": "What is JSON to CSV conversion?",
+      "a": "JSON to CSV conversion transforms JSON data into a tabular CSV format. This makes data easier to view, analyze, and import into spreadsheets."
+    },
+    {
+      "q": "Is formatting preserved?",
+      "a": "Nested JSON structures are flattened into rows and columns to fit the CSV format. This ensures compatibility with spreadsheet software."
+    },
+    {
+      "q": "Can I download the CSV file?",
+      "a": "Yes. After conversion, you can download the generated CSV file directly to your device."
+    },
+    {
+      "q": "Is it secure?",
+      "a": "Yes. All processing happens locally in your browser, and no data is saved or transmitted."
+    },
+    {
+      "q": "Who should use this?",
+      "a": "Developers, data analysts, and students commonly use this tool for data conversion and analysis."
+    }
+  ],
+
+  "cm-to-inch": [
+    {
+      "q": "What does CM to Inch converter do?",
+      "a": "This converter changes measurements from centimeters to inches using a standard conversion formula."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "Yes. It uses precise and widely accepted unit conversion standards."
+    },
+    {
+      "q": "Can I enter decimal values?",
+      "a": "Yes. Decimal values are supported for accurate and detailed conversions."
+    },
+    {
+      "q": "Is this tool free?",
+      "a": "Yes. The CM to Inch converter is completely free to use."
+    },
+    {
+      "q": "Who can use this?",
+      "a": "Students, designers, engineers, and professionals can use this tool for quick unit conversions."
+    }
+  ],
+
+  "inch-to-cm": [
+    {
+      "q": "What does Inch to CM converter do?",
+      "a": "This tool converts measurements from inches into centimeters using a standard mathematical formula."
+    },
+    {
+      "q": "Is the result instant?",
+      "a": "Yes. Conversion results are shown instantly as values are entered."
+    },
+    {
+      "q": "Does it support decimals?",
+      "a": "Yes. Decimal input values are fully supported."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "Yes. The conversion is based on accurate and standard measurement formulas."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes. The Inch to CM converter is free with no usage limits."
+    }
+  ],
+
+  "fahrenheit-to-celsius": [
+    {
+      "q": "What does Fahrenheit to Celsius do?",
+      "a": "This tool converts temperature values from Fahrenheit to Celsius using the standard scientific formula."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "Yes. It uses precise and scientifically accepted temperature conversion formulas."
+    },
+    {
+      "q": "Who uses this tool?",
+      "a": "Students, travelers, researchers, and professionals commonly use this temperature converter."
+    },
+    {
+      "q": "Does it support decimals?",
+      "a": "Yes. Decimal temperature values are supported for precise results."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes. The tool is completely free to use."
+    }
+  ],
+
+  "celsius-to-fahrenheit": [
+    {
+      "q": "What does Celsius to Fahrenheit do?",
+      "a": "This converter changes temperature values from Celsius to Fahrenheit using a standard conversion formula."
+    },
+    {
+      "q": "Is it instant?",
+      "a": "Yes. Results are calculated instantly without any delay."
+    },
+    {
+      "q": "Is the formula accurate?",
+      "a": "Yes. The calculation follows internationally accepted temperature conversion standards."
+    },
+    {
+      "q": "Does it work on mobile?",
+      "a": "Yes. The converter works smoothly on mobile, tablet, and desktop devices."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes. It is completely free with no restrictions."
+    }
+  ],
+
+  "image-resizer": [
+    {
+      "q": "What does Image Resizer do?",
+      "a": "The Image Resizer allows you to resize images by pixels or percentage directly in your browser. No uploads or installations are required."
+    },
+    {
+      "q": "Can I reduce or increase image size?",
+      "a": "Yes. You can reduce or increase image dimensions, although increasing size does not improve image quality."
+    },
+    {
+      "q": "Is my data safe and private?",
+      "a": "Yes. All image processing happens locally in your browser, and no images or data are stored or shared."
+    },
+    {
+      "q": "Which image formats are supported?",
+      "a": "You can resize and export images in JPG, PNG, and WEBP formats."
+    },
+    {
+      "q": "Does it work on mobile devices?",
+      "a": "Yes. The Image Resizer works on mobile phones, tablets, and desktop browsers."
+    },
+    {
+      "q": "Is it free to use?",
+      "a": "Yes. The Image Resizer is completely free with no usage limits."
+    }
+  ],
+
+  "random-name": [
+    {
+      "q": "What does the Random Name Generator do?",
+      "a": "The Random Name Generator creates random personal or business name ideas instantly based on common naming patterns. It is useful for inspiration, brainstorming, and creative projects."
+    },
+    {
+      "q": "Can I use these names commercially?",
+      "a": "Yes. Generated names can be used freely for ideas, projects, or inspiration, but you should verify trademarks before final commercial use."
+    },
+    {
+      "q": "Are the names unique every time?",
+      "a": "Names are randomly generated, so results may vary and may occasionally repeat. Each generation provides a new combination."
+    },
+    {
+      "q": "Does this generator support different styles?",
+      "a": "Yes. It offers a mix of modern, classic, and creative name styles for a variety of use cases."
+    },
+    {
+      "q": "Is any data stored?",
+      "a": "No. All name generation happens instantly in your browser and no data is stored."
+    }
+  ],
+
+  "password-generator": [
+    {
+      "q": "What is the Password Generator used for?",
+      "a": "The Password Generator creates strong and secure passwords to help protect your online accounts from unauthorized access."
+    },
+    {
+      "q": "Are generated passwords secure?",
+      "a": "Yes. Passwords are randomly generated and designed to be difficult to guess when used properly."
+    },
+    {
+      "q": "Can I generate passwords multiple times?",
+      "a": "Yes. You can generate unlimited passwords instantly without restrictions."
+    },
+    {
+      "q": "Does this store my passwords?",
+      "a": "No. Passwords are never saved, tracked, or transmitted, ensuring complete privacy."
+    },
+    {
+      "q": "Can I use it for banking or email passwords?",
+      "a": "Yes. The generator is suitable for any account that requires strong password security."
+    }
+  ],
+
+  "username-generator": [
+    {
+      "q": "What does the Username Generator do?",
+      "a": "The Username Generator creates unique username ideas for social media and online platforms."
+    },
+    {
+      "q": "Can I use usernames on Instagram or Twitter?",
+      "a": "Yes. Generated usernames can be used on most popular social media platforms."
+    },
+    {
+      "q": "Are the usernames guaranteed to be available?",
+      "a": "No. Availability depends on the platform and existing users."
+    },
+    {
+      "q": "Can I regenerate usernames?",
+      "a": "Yes. You can generate as many username ideas as you want."
+    },
+    {
+      "q": "Is my data saved?",
+      "a": "No. No personal data is collected or stored."
+    }
+  ],
+
+  "business-name-generator": [
+    {
+      "q": "What is the Business Name Generator?",
+      "a": "The Business Name Generator helps create creative business name ideas quickly for startups and projects."
+    },
+    {
+      "q": "Are the business names trademark-checked?",
+      "a": "No. You should always verify trademarks and domain availability before final use."
+    },
+    {
+      "q": "Can startups use these names?",
+      "a": "Yes. These names are ideal for startups, side projects, and brainstorming."
+    },
+    {
+      "q": "Are names generated randomly?",
+      "a": "Yes. Names are algorithmically generated to provide creative inspiration."
+    },
+    {
+      "q": "Does it support different industries?",
+      "a": "Yes. Generated names are general-purpose and suitable for multiple industries."
+    }
+  ],
+
+  "pet-name-generator": [
+    {
+      "q": "What does the Pet Name Generator do?",
+      "a": "The Pet Name Generator creates cute and creative pet name ideas for different animals."
+    },
+    {
+      "q": "Can I generate names for any pet?",
+      "a": "Yes. It works for dogs, cats, and many other pets."
+    },
+    {
+      "q": "Are names gender-specific?",
+      "a": "Names can be gender-specific or neutral depending on your preference."
+    },
+    {
+      "q": "Can I generate multiple names?",
+      "a": "Yes. You can generate unlimited pet name ideas."
+    },
+    {
+      "q": "Is this tool free to use?",
+      "a": "Yes. The Pet Name Generator is completely free."
+    }
+  ],
+
+  "baby-name-generator": [
+    {
+      "q": "What is the Baby Name Generator?",
+      "a": "The Baby Name Generator provides baby name ideas to help with naming inspiration."
+    },
+    {
+      "q": "Are names culturally specific?",
+      "a": "No. Names are general and not limited to a specific culture."
+    },
+    {
+      "q": "Can I regenerate names?",
+      "a": "Yes. You can generate unlimited name ideas."
+    },
+    {
+      "q": "Does it store baby information?",
+      "a": "No. No personal or baby-related data is collected or stored."
+    },
+    {
+      "q": "Is this suitable for naming research?",
+      "a": "Yes. It is useful for brainstorming and name exploration."
+    }
+  ],
+
+  "random-number-generator": [
+    {
+      "q": "What does the Random Number Generator do?",
+      "a": "It generates random numbers instantly for various use cases."
+    },
+    {
+      "q": "Can I use it for games?",
+      "a": "Yes. It is suitable for games, simulations, and random selection."
+    },
+    {
+      "q": "Are numbers truly random?",
+      "a": "The numbers are pseudo-randomly generated using standard algorithms."
+    },
+    {
+      "q": "Can I generate multiple numbers?",
+      "a": "Yes. Unlimited number generation is supported."
+    },
+    {
+      "q": "Is any data stored?",
+      "a": "No. No data is stored or tracked."
+    }
+  ],
+
+  "color-palette-generator": [
+    {
+      "q": "What is the Color Palette Generator?",
+      "a": "The Color Palette Generator creates color combinations for design and creative projects."
+    },
+    {
+      "q": "Can designers use these palettes?",
+      "a": "Yes. It is ideal for UI, web, graphic, and branding design."
+    },
+    {
+      "q": "Are colors exportable?",
+      "a": "You can copy color codes manually for use in your projects."
+    },
+    {
+      "q": "Are palettes unique?",
+      "a": "Palettes are randomly generated and may vary with each use."
+    },
+    {
+      "q": "Is it free?",
+      "a": "Yes. The tool is free to use."
+    }
+  ],
+
+  "uuid-generator": [
+    {
+      "q": "What does the UUID Generator do?",
+      "a": "The UUID Generator creates universally unique identifiers used in databases and systems."
+    },
+    {
+      "q": "Are UUIDs safe to use?",
+      "a": "Yes. UUIDs are widely used and suitable for identifying records uniquely."
+    },
+    {
+      "q": "Can UUIDs repeat?",
+      "a": "The probability of duplication is extremely low."
+    },
+    {
+      "q": "Does it store generated UUIDs?",
+      "a": "No. Generated UUIDs are not stored."
+    },
+    {
+      "q": "Is this tool secure?",
+      "a": "Yes. UUID generation happens locally in your browser."
+    }
+  ],
+
+  "barcode-generator": [
+    {
+      "q": "What does the Barcode Generator do?",
+      "a": "The Barcode Generator creates barcodes for products, labels, and inventory management."
+    },
+    {
+      "q": "Can I use barcodes commercially?",
+      "a": "Yes. Generated barcodes can be used for testing, labeling, and internal projects."
+    },
+    {
+      "q": "Are multiple formats supported?",
+      "a": "Yes. Basic barcode formats are supported."
+    },
+    {
+      "q": "Is any data saved?",
+      "a": "No. No barcode data is stored."
+    },
+    {
+      "q": "Is it free to use?",
+      "a": "Yes. The Barcode Generator is free."
+    }
+  ],
+
+  "qr-generator": [
+    {
+      "q": "What does the QR Code Generator do?",
+      "a": "The QR Code Generator creates QR codes for links, text, and other information."
+    },
+    {
+      "q": "Can QR codes be scanned by phones?",
+      "a": "Yes. Generated QR codes work with standard smartphone QR scanners."
+    },
+    {
+      "q": "Is there a scan limit?",
+      "a": "No. There are no limits on QR code scans."
+    },
+    {
+      "q": "Does it store QR data?",
+      "a": "No. QR code data is not stored or tracked."
+    },
+    {
+      "q": "Is it suitable for business use?",
+      "a": "Yes. It is suitable for marketing, sharing links, and business materials."
+    }
+  ],
+
+  "otp-generator": [
+    {
+      "q": "What does the OTP Generator do?",
+      "a": "The OTP Generator creates one-time passwords for testing and demonstration purposes."
+    },
+    {
+      "q": "Is it linked to real authentication?",
+      "a": "No. It is not connected to any real authentication system."
+    },
+    {
+      "q": "Can OTPs repeat?",
+      "a": "Yes. OTPs are randomly generated and may repeat."
+    },
+    {
+      "q": "Does it store OTPs?",
+      "a": "No. Generated OTPs are not stored."
+    },
+    {
+      "q": "Is it secure?",
+      "a": "Yes. OTP generation happens locally in your browser."
+    }
+  ],
+
+  "stopwatch": [
+    {
+      "q": "What is a stopwatch?",
+      "a": "A stopwatch is a tool used to measure elapsed time accurately."
+    },
+    {
+      "q": "Can I pause and resume the stopwatch?",
+      "a": "Yes. You can pause and resume timing without losing recorded time."
+    },
+    {
+      "q": "Is the stopwatch accurate?",
+      "a": "Yes. It provides high-precision time tracking in real time."
+    },
+    {
+      "q": "Does the stopwatch work on mobile?",
+      "a": "Yes. It works on mobile, tablet, and desktop devices."
+    },
+    {
+      "q": "Do I need to install anything?",
+      "a": "No. The stopwatch runs directly in your browser with no installation required."
+    }
+  ],
+
+  "time-zone-converter": [
+    {
+      "q": "What does a time zone converter do?",
+      "a": "A time zone converter converts time between different global time zones."
+    },
+    {
+      "q": "Is it useful for meetings?",
+      "a": "Yes. It helps schedule meetings across different regions."
+    },
+    {
+      "q": "Does it support all countries?",
+      "a": "Most major global time zones are supported."
+    },
+    {
+      "q": "Is daylight saving handled?",
+      "a": "Yes. Daylight saving time adjustments are applied automatically."
+    },
+    {
+      "q": "Is it accurate?",
+      "a": "Yes. It provides accurate time conversions."
+    }
+  ],
+
+  "world-clock": [
+    {
+      "q": "What is a world clock?",
+      "a": "A world clock displays the current time in multiple cities around the world."
+    },
+    {
+      "q": "Can I track multiple cities?",
+      "a": "Yes. You can view and track multiple cities at the same time."
+    },
+    {
+      "q": "Is it updated in real time?",
+      "a": "Yes. Time updates automatically in real time."
+    },
+    {
+      "q": "Is it helpful for travelers?",
+      "a": "Yes. It helps manage schedules across different time zones."
+    },
+    {
+      "q": "Does it work on mobile?",
+      "a": "Yes. The world clock is fully responsive."
+    }
+  ],
+
+  "meeting-time-finder": [
+    {
+      "q": "What is a meeting time finder?",
+      "a": "A meeting time finder helps identify the best meeting time across multiple time zones."
+    },
+    {
+      "q": "Is it useful for remote teams?",
+      "a": "Yes. It simplifies scheduling for remote and global teams."
+    },
+    {
+      "q": "Can I compare multiple locations?",
+      "a": "Yes. Multiple regions and cities can be compared."
+    },
+    {
+      "q": "Does it adjust for daylight saving?",
+      "a": "Yes. Daylight saving time adjustments are handled automatically."
+    },
+    {
+      "q": "Is it free to use?",
+      "a": "Yes. The meeting time finder is completely free."
+    }
+  ]
+}

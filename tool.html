@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Tool — ToolZen Hub</title>
+  <meta name="description" content="ToolZen Hub — fast calculators and converters" />
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/3.2.0/sha.js"></script>
+  
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+
+  <main class="container" id="main">
+
+    <div style="margin-top:12px">
+      <div class="crumb" id="breadcrumb">Home › Category › Tool</div>
+      <h1 id="toolTitle">Tool</h1>
+      <div class="desc" id="toolDesc"></div>
+
+      <div class="tool-wrap">
+        <div id="inputs" class="panel"></div>
+        <aside id="result" class="panel"></aside>
+      </div>
+
+      <section id="faq" class="faq"></section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/loader.js"></script>
+
+  <!-- MODULE SCRIPT -->
+  <script type="module">
+
+    import { renderFAQ } from './renderers/faqs.js';
+    import { renderSEO } from './renderers/seo.js';
+
+    /* ========= RENDER MAP (LAZY IMPORTS) ========= */
+    const renderMap = {
+      /* ===== CALCULATORS ===== */
+      'bmi-calculator': () => import('./tools/bmi.js').then(m => m.renderBMI),
+      'emi-calculator': () => import('./tools/emi.js').then(m => m.renderEMI),
+      'loan-calculator': () => import('./tools/loan.js').then(m => m.renderLoan),
+      'age-calculator': () => import('./tools/age.js').then(m => m.renderAge),
+      'percentage-calculator': () => import('./tools/percentage.js').then(m => m.renderPercentage),
+      'gst-calculator': () => import('./tools/gst.js').then(m => m.renderGST),
+      'discount-calculator': () => import('./tools/discount.js').then(m => m.renderDiscount),
+      'sip-calculator': () => import('./tools/sip.js').then(m => m.renderSIP),
+      'swp-calculator': () => import('./tools/swp.js').then(m => m.renderSWP),
+      'compound-interest-calculator': () => import('./tools/compound-interest.js').then(m => m.renderCompoundInterest),
+      'fd-calculator': () => import('./tools/fd.js').then(m => m.renderFD),
+      'rd-calculator': () => import('./tools/rd.js').then(m => m.renderRD),
+      'mortgage-calculator': () => import('./tools/home-loan.js').then(m => m.renderMortgage),
+      'tax-calculator': () => import('./tools/tax.js').then(m => m.renderTax),
+      'calorie-calculator': () => import('./tools/calorie.js').then(m => m.renderCalorie),
+      'bmr-calculator': () => import('./tools/bmr.js').then(m => m.renderBMR),
+      //'date-difference': () => import('./tools/date-difference.js').then(m => m.renderDateDifference),
+      //'unit-converter': () => import('./tools/unit-converter.js').then(m => m.renderUnitConverter),
+      'roi-calculator': () => import('./tools/roi.js').then(m => m.renderROI),
+      'profit-loss-calculator': () => import('./tools/profit-loss.js').then(m => m.renderProfitLoss),
+      'body-fat-calculator': () => import('./tools/body-fat.js').then(m => m.renderBodyFat),
+
+      /* ===== CONVERTERS ===== */
+      'cm-to-inch': () => import('./tools/cm-to-inch.js').then(m => m.renderCmToInch),
+      'kg-to-lbs': () => import('./tools/kg-to-lb.js').then(m => m.renderKgToLbs),
+      'celsius-to-fahrenheit': () => import('./tools/celsius-to-fahrenheit.js').then(m => m.renderCelsiusToFahrenheit),
+      'csv-to-json': () => import('./tools/csv-to-json.js').then(m => m.renderCsvToJson),
+      'png-to-jpg': () => import('./tools/png-to-jpg.js').then(m => m.renderPngToJpg),
+      'image-resizer': () => import('./tools/image-resizer.js').then(m => m.renderImageResizer),
+
+
+      /* ===== GENERATORS ===== */
+      'password-generator': () => import('./tools/password-generator.js').then(m => m.renderPasswordGenerator),
+      'qr-code-generator': () => import('./tools/qr-code.js').then(m => m.renderQrCodeGenerator),
+      'random-name-generator': () => import('./tools/random-name.js').then(m => m.renderRandomNameGenerator),
+      'username-generator': () => import('./tools/username-generator.js').then(m => m.renderUsernameGenerator),
+      'business-name-generator': () => import('./tools/business-name-generator.js').then(m => m.renderBusinessNameGenerator),
+      'random-number-generator': () => import('./tools/random-number.js').then(m => m.renderRandomNumberGenerator),
+      'color-palette-generator': () => import('./tools/color-palette-generator.js').then(m => m.renderColorPaletteGenerator),
+      'uuid-generator': () => import('./tools/uuid-generator.js').then(m => m.renderUuidGenerator),
+      'barcode-generator': () => import('./tools/barcode-generator.js').then(m => m.renderBarcodeGenerator),
+      'otp-generator': () => import('./tools/otp-generator.js').then(m => m.renderOtpGenerator),
+
+
+      
+
+      /* ===== TIMERS ===== */
+      'stopwatch': () => import('./tools/stopwatch.js').then(m => m.renderStopwatch),
+      'world-clock': () =>import('./tools/world-clock.js').then(m => m.renderWorldClock),
+      'time-zone-converter': () =>import('./tools/time-zone-converter.js').then(m => m.renderTimeZoneConverter),
+    
+
+
+    };
+
+
+    const $ = s => document.querySelector(s);
+
+    async function loadCatalog(){
+      const r = await fetch('data/tools.json');
+      return r.json();
+    }
+
+    function renderPlaceholder(){
+      $('#inputs').innerHTML = '<div class="small">Tool UI not implemented yet.</div>';
+      $('#result').innerHTML = '<div class="small">Result will appear here.</div>';
+    }
+
+    (async function main(){
+      const data = await loadCatalog();
+      const id = new URLSearchParams(location.search).get('id');
+      
+
+      if(!id){
+        $('#toolTitle').innerText = 'No tool selected';
+        renderPlaceholder();
+        return;
+      }
+       
+
+      let tool, category;
+      for(const c of data.categories){
+        const t = (c.tools || []).find(x => x.id === id);
+        if(t){ tool = t; category = c; break; }
+      }
+
+      if(!tool){
+        $('#toolTitle').innerText = 'Tool not found';
+        renderPlaceholder();
+        return;
+      }
+
+      document.title = `${tool.title} – Free Online Tool | ToolZen Hub`;
+      $('#breadcrumb').innerHTML = `
+      <a href="index.html">Home</a> ›
+      <a href="category.html?slug=${encodeURIComponent(category.id)}">${category.title}</a> ›
+      <span>${tool.title}</span>
+`;
+
+      $('#toolTitle').innerText = tool.title;
+      $('#toolDesc').innerText = tool.desc || '';
+
+      tool.prefill = Object.fromEntries(new URLSearchParams(location.search));
+
+      const loader = renderMap[tool.id];
+      if(loader){
+        const renderer = await loader();
+        renderer(tool);
+      } else {
+        renderPlaceholder();
+      }
+
+      renderSEO(tool.id);
+      renderFAQ(tool.id);
+    })();
+
+  </script>
+
+</body>
+</html>

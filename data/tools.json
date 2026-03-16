@@ -1,0 +1,86 @@
+{
+  "categories": [
+    {
+      "id": "calculators",
+      "title": "Calculators",
+      "desc": "Quick math & finance tools.",
+      "tools": [
+        { "id": "bmi-calculator", "title": "BMI Calculator", "desc": "Quick BMI check.", "type": "bmi" },
+        { "id": "emi-calculator", "title": "EMI Calculator", "desc": "Monthly EMI calculation.", "type": "emi" },
+        { "id": "loan-calculator", "title": "Loan Calculator", "desc": "Monthly payment & totals.", "type": "loan" },
+        { "id": "age-calculator", "title": "Age Calculator", "desc": "Calculate precise age.", "type": "age" },
+        { "id": "percentage-calculator", "title": "Percentage Calculator", "desc": "Find percentages fast.", "type": "placeholder" },
+        { "id": "discount-calculator", "title": "Discount Calculator", "desc": "Calculate discounts easily.", "type": "placeholder" },
+        { "id": "sip-calculator", "title": "SIP Calculator", "desc": "Calculate SIP returns.", "type": "placeholder" },
+        { "id": "swp-calculator", "title": "SWP Calculator", "desc": "Calculate SWP returns.", "type": "placeholder" },
+        { "id": "compound-interest-calculator", "title": "Compound Interest Calculator", "desc": "Compound interest growth.", "type": "placeholder" },
+        { "id": "fd-calculator", "title": "FD Calculator", "desc": "Fixed deposit returns.", "type": "placeholder" },
+        { "id": "rd-calculator", "title": "RD Calculator", "desc": "Recurring deposit maturity.", "type": "placeholder" },
+        { "id": "mortgage-calculator", "title": "Mortgage Calculator", "desc": "Monthly mortgage payment.", "type": "placeholder" },
+        { "id": "tax-calculator", "title": "Income Tax Calculator", "desc": "Estimate income tax.", "type": "placeholder" },
+        { "id": "calorie-calculator", "title": "Calorie Calculator", "desc": "Daily calorie needs.", "type": "placeholder" },
+        { "id": "bmr-calculator", "title": "BMR Calculator", "desc": "Basal metabolic rate.", "type": "placeholder" },
+        { "id": "roi-calculator", "title": "ROI Calculator", "desc": "Return on investment.", "type": "placeholder" },
+        { "id": "profit-loss-calculator", "title": "Profit & Loss Calculator", "desc": "Business P&L calculator.", "type": "placeholder" },
+        { "id": "body-fat-calculator", "title": "Body Fat Calculator", "desc": "Estimate body fat %.", "type": "placeholder" }
+      ]
+    },
+
+    {
+      "id": "converters",
+      "title": "Converters",
+      "desc": "File and unit converters.",
+      "tools": [
+              
+          { "id": "cm-to-inch", "title": "CM to Inch Converter", "desc": "Convert CM to Inch.", "type": "unit" },
+          { "id": "kg-to-lbs", "title": "KG to LBS Converter", "desc": "Convert KG to LBS.", "type": "unit" },
+          { "id": "celsius-to-fahrenheit", "title": "Celsius to Fahrenheit", "desc": "Convert C° to F°.", "type": "unit" },
+          
+          { "id": "csv-to-json", "title": "CSV to JSON", "desc": "Convert CSV to JSON.", "type": "code" },
+    
+
+          { "id": "png-to-jpg", "title": "PNG to JPG", "desc": "Convert PNG to JPG.", "type": "image" },
+          { "id": "image-resizer", "title": "Image Resizer", "desc": "Resize and optimize images.", "type": "image" }
+
+          
+
+      ]
+    },
+
+    {
+      "id": "generators",
+      "title": "Generators",
+      "desc": "Name, password, and idea generators.",
+      "tools": [
+         
+        { "id": "password-generator", "title": "Password Generator", "desc": "Create strong and secure passwords instantly.", "type": "password" },
+        { "id": "qr-code-generator", "title": "QR Code Generator", "desc": "Generate QR codes for links, text, and more.", "type": "qr-code" },
+        { "id": "random-name-generator", "title": "Random Name Generator", "desc": "Generate random names for people or characters.", "type": "random-name" },
+        { "id": "username-generator", "title": "Username Generator", "desc": "Generate unique usernames for social platforms.", "type": "username" },
+        { "id": "business-name-generator", "title": "Business Name Generator", "desc": "Generate creative business and brand name ideas.", "type": "business-name" },
+        { "id": "random-number-generator", "title": "Random Number Generator", "desc": "Generate random numbers within a chosen range.", "type": "random-number" },
+        { "id": "color-palette-generator", "title": "Color Palette Generator", "desc": "Generate beautiful color palettes for design.", "type": "color-palette" },
+        { "id": "uuid-generator", "title": "UUID Generator", "desc": "Generate universally unique identifiers (UUIDs).", "type": "uuid" },
+        { "id": "barcode-generator", "title": "Barcode Generator", "desc": "Generate barcodes for products and inventory.", "type": "barcode" },
+        { "id": "otp-generator", "title": "OTP Generator", "desc": "Generate secure one-time passwords instantly.", "type": "otp" }
+      ]
+
+      
+    },
+
+
+    {
+      "id": "timers",
+      "title": "Timers",
+      "desc": "Stopwatch, countdown and time tools.",
+      "tools": [
+        { "id": "stopwatch", "title": "Stopwatch", "desc": "Start/stop/reset stopwatch.", "type": "stopwatch" },
+        { "id": "world-clock", "title": "World Clock", "desc": "View current local time in major cities around the world.", "type": "world_clock" },
+        { "id": "time-zone-converter", "title": "Time Zone Converter", "desc": "Convert time between different time zones instantly.", "type": "timezone_converter" }
+      ]
+    }
+
+  ],
+
+  "featured": ["bmi-calculator", "pdf-to-word", "random-name", "stopwatch"]
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ToolZen</title>
+
+<script>
+/* redirect any /tools/slug to tool.html */
+
+const parts = location.pathname.split('/').filter(Boolean);
+const slug = parts.pop();
+
+if (slug && slug !== "tools") {
+  location.replace("/tool.html?id=" + slug);
+} else {
+  location.replace("/index.html");
+}
+</script>
+
+</head>
+<body></body>
+</html>
